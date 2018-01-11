@@ -1,0 +1,39 @@
+environment:
+  matrix:
+    - nodejs_version: "8"
+
+platform:
+  - x86
+  - x64
+
+configuration: Release
+
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - git submodule update --recursive --init
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+build_script:
+  - echo true
+
+after_test:
+  - npm run prebuild
+
+artifacts:
+  - path: prebuilds
+    name: $(APPVEYOR_REPO_TAG_NAME)-win-$(PLATFORM)
+    type: zip
+
+deploy:
+  - provider: GitHub
+    artifact: /.*\.zip/
+    auth_token:
+    draft: false
+    prerelease: false
+    on:
+      appveyor_repo_tag: true

@@ -1,0 +1,3 @@
+[submodule "crypto-stream-state"]
+	path = crypto-stream-state
+	url = git://github.com/emilbayes/crypto-stream-state

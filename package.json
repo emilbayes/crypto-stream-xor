@@ -1,0 +1,33 @@
+{
+  "name": "crypto-stream-xor",
+  "version": "0.0.0",
+  "description": "Streaming symmetric encryption. Unauthenticated! Extension to libsodium",
+  "main": "index.js",
+  "dependencies": {
+    "node-gyp-build": "^3.2.2",
+    "libsodium-prebuilt": "emilbayes/libsodium-prebuilt"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.6.2",
+    "prebuildify": "^2.4.3",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "dev": "node-gyp rebuild",
+    "install": "node-gyp-build",
+    "test": "node test.js",
+    "prebuild": "prebuildify -a --strip",
+    "prebuild-ia32": "prebuildify -a --strip --arch=ia32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/prebuilt-example.git"
+  },
+  "keywords": [],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/prebuilt-example/issues"
+  },
+  "homepage": "https://github.com/emilbayes/prebuilt-example#readme"
+}
