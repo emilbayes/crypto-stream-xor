@@ -152,21 +152,29 @@ NAN_MODULE_INIT(InitAll) {
   }
 
   EXPORT_NUMBER_VALUE(crypto_stream_xor_STATEBYTES, crypto_stream_xor_statebytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xor_KEYBYTES, crypto_stream_keybytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xor_NONCEBYTES, crypto_stream_noncebytes())
   EXPORT_FUNCTION(crypto_stream_xor_init)
   EXPORT_FUNCTION(crypto_stream_xor_update)
   EXPORT_FUNCTION(crypto_stream_xor_final)
 
   EXPORT_NUMBER_VALUE(crypto_stream_xsalsa20_xor_STATEBYTES, crypto_stream_xsalsa20_xor_statebytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xsalsa20_xor_KEYBYTES, crypto_stream_xsalsa20_keybytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xsalsa20_xor_NONCEBYTES, crypto_stream_xsalsa20_noncebytes())
   EXPORT_FUNCTION(crypto_stream_xsalsa20_xor_init)
   EXPORT_FUNCTION(crypto_stream_xsalsa20_xor_update)
   EXPORT_FUNCTION(crypto_stream_xsalsa20_xor_final)
 
   EXPORT_NUMBER_VALUE(crypto_stream_chacha20_xor_STATEBYTES, crypto_stream_chacha20_xor_statebytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_chacha20_xor_KEYBYTES, crypto_stream_chacha20_keybytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_chacha20_xor_NONCEBYTES, crypto_stream_chacha20_noncebytes())
   EXPORT_FUNCTION(crypto_stream_chacha20_xor_init)
   EXPORT_FUNCTION(crypto_stream_chacha20_xor_update)
   EXPORT_FUNCTION(crypto_stream_chacha20_xor_final)
 
   EXPORT_NUMBER_VALUE(crypto_stream_xchacha20_xor_STATEBYTES, crypto_stream_xchacha20_xor_statebytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xchacha20_xor_KEYBYTES, crypto_stream_xchacha20_keybytes())
+  EXPORT_NUMBER_VALUE(crypto_stream_xchacha20_xor_NONCEBYTES, crypto_stream_xchacha20_noncebytes())
   EXPORT_FUNCTION(crypto_stream_xchacha20_xor_init)
   EXPORT_FUNCTION(crypto_stream_xchacha20_xor_update)
   EXPORT_FUNCTION(crypto_stream_xchacha20_xor_final)

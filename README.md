@@ -19,6 +19,8 @@ PRF you can also access the specific algorithm
 ### Default API
 
 #### `csx.crypto_stream_xor_STATEBYTES`
+#### `csx.crypto_stream_xor_KEYBYTES`
+#### `csx.crypto_stream_xor_NONCEBYTES`
 #### `csx.crypto_stream_xor_init`
 #### `csx.crypto_stream_xor_update`
 #### `csx.crypto_stream_xor_final`
@@ -26,14 +28,20 @@ PRF you can also access the specific algorithm
 ### Specific algorithms
 
 #### `csx.crypto_stream_xsalsa20_xor_STATEBYTES`
+#### `csx.crypto_stream_xsalsa20_xor_KEYBYTES`
+#### `csx.crypto_stream_xsalsa20_xor_NONCEBYTES`
 #### `csx.crypto_stream_xsalsa20_xor_init()`
 #### `csx.crypto_stream_xsalsa20_xor_update()`
 #### `csx.crypto_stream_xsalsa20_xor_final()`
 #### `csx.crypto_stream_chacha20_xor_STATEBYTES`
+#### `csx.crypto_stream_chacha20_xor_KEYBYTES`
+#### `csx.crypto_stream_chacha20_xor_NONCEBYTES`
 #### `csx.crypto_stream_chacha20_xor_init()`
 #### `csx.crypto_stream_chacha20_xor_update()`
 #### `csx.crypto_stream_chacha20_xor_final()`
 #### `csx.crypto_stream_xchacha20_xor_STATEBYTES`
+#### `csx.crypto_stream_xchacha20_xor_KEYBYTES`
+#### `csx.crypto_stream_xchacha20_xor_NONCEBYTES`
 #### `csx.crypto_stream_xchacha20_xor_init()`
 #### `csx.crypto_stream_xchacha20_xor_update()`
 #### `csx.crypto_stream_xchacha20_xor_final()`
